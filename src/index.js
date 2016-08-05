@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
   res.send('Hello World!');
 });
 
-app.get('/feedly/*', cors(delegate), (req, res) => {
+app.all('/feedly/*', cors(delegate), (req, res) => {
   const resolvedPath = req.path.substr('/feedly'.length);
   res.send(`catch feedly request path=${resolvedPath}`);
 });
