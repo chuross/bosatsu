@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "全てを許してくれるAPI中継サーバー",
   "repository": "https://github.com/chuross/bosatsu",
-  "main": "src/index.js",
+  "main": "publish/index.js",
   "scripts": {
     "start": "npm run build && node publish/index.js",
     "build": "npm run clean && babel src --out-dir publish",
